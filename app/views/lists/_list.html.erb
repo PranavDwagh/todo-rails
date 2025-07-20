@@ -1,0 +1,10 @@
+<tr id="<%= dom_id list %>">
+  <th scope="row">"<%= dom_id list %>"</th>
+  <td><%= list.description %></td>
+  <td><%= list.completed %></td>
+  <td><%= link_to "Show this list", list %></td>
+  <td><%= link_to "Edit this list", edit_list_path(list)  %></td>
+  <td> <%= button_to "Destroy this list", list, method: :delete %></td>
+</tr>
+
+
